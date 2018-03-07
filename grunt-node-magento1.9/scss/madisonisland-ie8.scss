@@ -1,0 +1,14 @@
+
+// ==============================================
+// Maddison Island Specific / No MQ
+// ==============================================
+
+$mq-support: false;
+$mq-fixed-value: 1024px;
+
+@import "framework";
+
+// ----------------------------------------------
+// Content
+
+@import "content/home";

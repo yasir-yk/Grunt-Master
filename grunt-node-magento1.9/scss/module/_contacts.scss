@@ -1,0 +1,29 @@
+
+/* ============================================ *
+ * Contacts
+ * ============================================ */
+
+.contacts-index-index {
+	.scaffold-form .input-box{max-width:435px;}
+	.scaffold-form .input-box input{width:100%;}
+    .buttons-set {
+        max-width: 435px;
+
+        p.required {
+            float: left;
+        }
+
+        @include bp(max-width, $bp-small) {
+            margin-left: 0;
+
+            button {
+                float: left;
+                margin-left: 0px;
+            }
+
+            p.required {
+                float: right;
+            }
+        }
+    }
+}

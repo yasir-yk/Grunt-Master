@@ -1,0 +1,15 @@
+
+// ==============================================
+// Maddison Island Specific Components
+// ==============================================
+
+$mq-support: true;
+$mq-fixed-value: false;
+
+@import "framework";
+
+// ----------------------------------------------
+// Content
+
+@import "content/home";
+@import "content/category";

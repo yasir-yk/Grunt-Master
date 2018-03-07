@@ -1,0 +1,53 @@
+/*
+Theme Name: Base
+Author: Anonymous
+Author URI:
+Version: 1
+Description: Base theme for Wordpress
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: base
+Tags: one-column, two-columns
+Theme URI:
+*/
+
+$mq-breakpoints: (
+    // Base device classes
+    mobile:      320px,
+    tablet:      640px,
+    desktop:    1024px,
+    widescreen: 1200px,
+    tvscreen:   1920px,
+
+    // Tweakpoints
+    mobileLandscape: 480px
+);
+
+// Show active breakpoint in top right corner of viewport 
+$mq-show-breakpoints: (mobile, mobileLandscape, tablet, desktop, widescreen, tvscreen);
+
+@import "base/markup-variables";
+@import "base/markup-mixins";
+@import "base/wp-reset";
+@import "mq";
+// @import "bootstrap-custom";
+// @import "bootstrap/variables";
+// @import "bootstrap/mixins";
+
+
+.main {
+  max-width: 990px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ccc;
+
+  @include mq(mobile, tablet) {
+    background: #ff0;
+  }
+  @include mq(tablet) {
+    background: #0ff;
+  }
+  @include mq(desktop) {
+    background: #f0f;
+  }
+}

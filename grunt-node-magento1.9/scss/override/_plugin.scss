@@ -1,0 +1,16 @@
+
+/* ============================================ *
+ * Calendar styles (restore styles from /js/calendar)
+ * ============================================ */
+div.calendar {
+    table {
+        border-collapse: separate;
+
+        td.button {
+            display: table-cell;
+            background: inherit;
+            color: inherit;
+            text-transform: none;
+        }
+    }
+}

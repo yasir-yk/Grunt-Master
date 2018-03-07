@@ -1,0 +1,20 @@
+
+/* ============================================ *
+ * Checkout - Success
+ * ============================================ */
+
+.checkout-onepage-success {
+    .col-main {
+        padding: 0;
+        text-align: center;
+    }
+
+    .buttons-set {
+        margin: $gap 0;
+        text-align: center;
+
+        button {
+            float: none;
+        }
+    }
+}

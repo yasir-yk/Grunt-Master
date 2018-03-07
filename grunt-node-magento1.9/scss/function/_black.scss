@@ -1,0 +1,12 @@
+
+// =============================================
+// Function - Black
+// =============================================
+
+@function black ($opacity) {
+    @return rgba(0, 0, 0, $opacity);
+}
+
+@function black-fallback ($opacity) {
+    @return lighten(#000000, (1 - $opacity));
+}

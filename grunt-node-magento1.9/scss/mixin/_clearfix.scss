@@ -1,0 +1,14 @@
+
+// =============================================
+// Mixin - Clearfix
+// =============================================
+
+// This mixin is intended to be applied to an :after pseudo-class. Example:
+//  &:after {
+//      @include clearfix;
+//  }
+@mixin clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
